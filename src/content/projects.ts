@@ -29,14 +29,4 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/MadTekkers/VetEats",
     status: "live",
   },
-  {
-    slug: "wedding-guest-site",
-    name: "Wedding guest site",
-    summary:
-      "Guest-facing wedding website with RSVP flow — event details, travel info, and response collection (prototype).",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    liveUrl: "https://wedding-site-ryan-chiem-s-projects.vercel.app",
-    repoUrl: "https://github.com/MadTekkers/wedding-guest-site",
-    status: "prototype",
-  },
 ];

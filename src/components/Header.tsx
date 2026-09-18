@@ -2,7 +2,6 @@ import { site } from "@/content/site";
 
 const nav = [
   { href: "#projects", label: "Projects" },
-  { href: "#ai", label: "How I work with AI" },
   { href: "#about", label: "About" },
 ] as const;
 

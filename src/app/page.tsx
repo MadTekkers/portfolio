@@ -1,13 +1,11 @@
 import { ProjectCard } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
-import { aiFleet, aiWorkingPrinciples } from "@/content/ai-fleet";
 import { projects } from "@/content/projects";
 import { site } from "@/content/site";
 
 export default function Home() {
   return (
     <div id="top">
-      {/* Hero */}
       <section
         aria-labelledby="hero-heading"
         className="border-b border-zinc-800/80"
@@ -53,7 +51,6 @@ export default function Home() {
       </section>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        {/* Projects */}
         <Section
           id="projects"
           eyebrow="Shipped work"
@@ -63,75 +60,13 @@ export default function Home() {
             Real apps I built and deployed. Each card links to the live site and
             the public GitHub repo.
           </p>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
         </Section>
 
-        {/* AI literacy */}
-        <Section
-          id="ai"
-          eyebrow="AI literacy"
-          title="How I work with AI"
-          className="border-t border-zinc-800/80"
-        >
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-            <div>
-              <p className="mb-4 text-sm leading-relaxed text-zinc-400 sm:text-base">
-                I treat AI agents like specialized teammates in a personal
-                operating system — each scoped to a domain I already work in.
-                The point for employers: I can design agent workflows, keep
-                outputs reviewable, and ship the surrounding product work.
-              </p>
-              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-300">
-                Working principles
-              </h3>
-              <ul className="space-y-2.5">
-                {aiWorkingPrinciples.map((principle) => (
-                  <li
-                    key={principle}
-                    className="flex gap-3 text-sm leading-relaxed text-zinc-400"
-                  >
-                    <span
-                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"
-                      aria-hidden
-                    />
-                    <span>{principle}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 sm:p-6">
-              <h3 className="mb-1 text-base font-semibold text-zinc-50">
-                Agent fleet (personal OS)
-              </h3>
-              <p className="mb-4 text-sm text-zinc-500">
-                Specialized bots I run for day-to-day work — not a commercial
-                product, a practical workflow stack.
-              </p>
-              <ul className="grid gap-2 sm:grid-cols-2">
-                {aiFleet.map((agent) => (
-                  <li
-                    key={agent.name}
-                    className="rounded-lg border border-zinc-800/80 bg-zinc-950/50 px-3 py-2.5"
-                  >
-                    <p className="text-sm font-medium text-zinc-200">
-                      {agent.name}
-                    </p>
-                    <p className="mt-0.5 text-xs leading-snug text-zinc-500">
-                      {agent.focus}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </Section>
-
-        {/* About */}
         <Section
           id="about"
           eyebrow="About"

@@ -1,6 +1,6 @@
 # Ryan Chiem — Portfolio
 
-Personal recruiting portfolio: shipped side projects, AI literacy / multi-agent workflows, and links to LinkedIn + GitHub.
+Personal recruiting portfolio: shipped side projects and links to LinkedIn + GitHub.
 
 **Live:** [ryan-chiem.vercel.app](https://ryan-chiem.vercel.app)  
 **Repo:** [github.com/MadTekkers/portfolio](https://github.com/MadTekkers/portfolio)
@@ -35,18 +35,17 @@ Typed content lives under `src/content/`:
 |------|---------|
 | `site.ts` | Name, headline, value prop, about, social URLs, SEO base URL |
 | `projects.ts` | Side projects (summary, stack, live + repo links) |
-| `ai-fleet.ts` | Agent fleet list + working principles |
 
 Update those modules and redeploy — no CMS or env vars needed.
 
 ## Vercel
 
 - Team/scope: `ryan-chiem-s-projects`
-- Preferred project name / production URL: `ryan-chiem` → `https://ryan-chiem.vercel.app`
-- Link the GitHub repo for continuous deploys from `main`, or deploy from this directory:
+- Project name / production URL: `ryan-chiem` → `https://ryan-chiem.vercel.app`
+- Linked to GitHub for continuous deploys from `main`, or deploy from this directory:
 
 ```bash
-vercel --prod --yes --name ryan-chiem
+vercel --prod --yes --scope ryan-chiem-s-projects
 ```
 
 Zero env vars are required for this static portfolio.
