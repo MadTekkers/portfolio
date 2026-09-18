@@ -6,29 +6,29 @@ type Props = {
 
 export function ProjectCard({ project }: Props) {
   return (
-    <article className="flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700 sm:p-6">
+    <article className="flex flex-col rounded-2xl border border-border bg-panel/80 p-5 transition-colors hover:border-border-strong sm:p-6">
       <div className="mb-3 flex items-start justify-between gap-3">
-        <h3 className="text-lg font-semibold tracking-tight text-zinc-50">
+        <h3 className="text-lg font-semibold tracking-tight text-foreground">
           {project.name}
         </h3>
         {project.status === "prototype" ? (
-          <span className="shrink-0 rounded-full border border-amber-500/30 bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-amber-300">
+          <span className="shrink-0 rounded-full border border-accent/35 bg-accent/10 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-accent-hover">
             Prototype
           </span>
         ) : (
-          <span className="shrink-0 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-emerald-300">
+          <span className="shrink-0 rounded-full border border-accent/35 bg-accent/10 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-accent-hover">
             Live
           </span>
         )}
       </div>
-      <p className="mb-4 flex-1 text-sm leading-relaxed text-zinc-400">
+      <p className="mb-4 flex-1 text-sm leading-relaxed text-muted">
         {project.summary}
       </p>
       <ul className="mb-5 flex flex-wrap gap-2" aria-label="Tech stack">
         {project.stack.map((item) => (
           <li
             key={item}
-            className="rounded-md bg-zinc-800/80 px-2 py-1 text-xs text-zinc-300"
+            className="rounded-md bg-panel-elevated px-2 py-1 text-xs text-ink-soft"
           >
             {item}
           </li>
@@ -39,7 +39,7 @@ export function ProjectCard({ project }: Props) {
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-full bg-zinc-100 px-3.5 py-1.5 text-sm font-medium text-zinc-900 transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+          className="inline-flex items-center rounded-full bg-foreground px-3.5 py-1.5 text-sm font-medium text-on-accent transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           Live site
           <span className="sr-only"> for {project.name}</span>

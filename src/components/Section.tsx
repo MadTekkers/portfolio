@@ -17,13 +17,13 @@ export function Section({ id, title, eyebrow, children, className = "" }: Props)
     >
       <div className="mb-8 max-w-2xl">
         {eyebrow ? (
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-400">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
             {eyebrow}
           </p>
         ) : null}
         <h2
           id={`${id}-heading`}
-          className="text-2xl font-semibold tracking-tight text-zinc-50 sm:text-3xl"
+          className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl"
         >
           {title}
         </h2>

@@ -1,13 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
-  --foreground: #fafafa;
+  --background: #0f1419;
+  --foreground: #e8eef4;
+  --accent: #6ba3d4;
+  --accent-hover: #8bb8de;
+  --muted: #9ab0c0;
+  --panel: #161c23;
+  --panel-elevated: #1c2430;
+  --border: #2a3441;
+  --border-strong: #3a4656;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-muted: #9ab0c0;
+  --color-panel: #161c23;
+  --color-panel-elevated: #1c2430;
+  --color-border: #2a3441;
+  --color-border-strong: #3a4656;
+  --color-ink-soft: #b7c4d2;
+  --color-on-accent: #0f1419;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -23,5 +39,5 @@ body {
 }
 
 ::selection {
-  background: color-mix(in oklab, #34d399 40%, transparent);
+  background: color-mix(in oklab, #6ba3d4 45%, transparent);
 }
