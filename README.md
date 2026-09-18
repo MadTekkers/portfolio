@@ -34,7 +34,7 @@ Typed content lives under `src/content/`:
 | File | Purpose |
 |------|---------|
 | `site.ts` | Name, headline, value prop, about, social URLs, SEO base URL |
-| `projects.ts` | Side projects (summary, stack, live + repo links) |
+| `projects.ts` | Side projects (summary, stack, live demo links) |
 
 Update those modules and redeploy — no CMS or env vars needed.
 

@@ -34,7 +34,7 @@ export function ProjectCard({ project }: Props) {
           </li>
         ))}
       </ul>
-      <div className="flex flex-wrap gap-3">
+      <div>
         <a
           href={project.liveUrl}
           target="_blank"
@@ -42,15 +42,6 @@ export function ProjectCard({ project }: Props) {
           className="inline-flex items-center rounded-full bg-zinc-100 px-3.5 py-1.5 text-sm font-medium text-zinc-900 transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
         >
           Live site
-          <span className="sr-only"> for {project.name}</span>
-        </a>
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center rounded-full border border-zinc-700 px-3.5 py-1.5 text-sm font-medium text-zinc-200 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
-        >
-          Repo
           <span className="sr-only"> for {project.name}</span>
         </a>
       </div>

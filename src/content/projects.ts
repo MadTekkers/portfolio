@@ -4,7 +4,6 @@ export type Project = {
   summary: string;
   stack: string[];
   liveUrl: string;
-  repoUrl: string;
   status?: "live" | "prototype";
 };
 
@@ -16,7 +15,6 @@ export const projects: Project[] = [
       "CrossFit, Hyrox, and functional fitness workout library — browse, filter, and save workouts for training.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     liveUrl: "https://wod-vault-seven.vercel.app",
-    repoUrl: "https://github.com/MadTekkers/wod-vault",
     status: "live",
   },
   {
@@ -26,7 +24,6 @@ export const projects: Project[] = [
       "Veterans Day deals map and route planner — find participating restaurants and plan an efficient route.",
     stack: ["Next.js", "Maps", "TypeScript", "Vercel"],
     liveUrl: "https://veteats.com",
-    repoUrl: "https://github.com/MadTekkers/VetEats",
     status: "live",
   },
 ];

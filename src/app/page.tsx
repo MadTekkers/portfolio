@@ -57,8 +57,7 @@ export default function Home() {
           title="Side projects with live links"
         >
           <p className="mb-8 max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base">
-            Real apps I built and deployed. Each card links to the live site and
-            the public GitHub repo.
+            Real apps I built and deployed. Each card links to the live demo.
           </p>
           <div className="grid gap-5 sm:grid-cols-2">
             {projects.map((project) => (
