@@ -53,11 +53,12 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <Section
           id="projects"
-          eyebrow="Shipped work"
-          title="Side projects with live links"
+          eyebrow="Selected work"
+          title="Software I've shipped"
         >
           <p className="mb-8 max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base">
-            Real apps I built and deployed. Each card links to the live demo.
+            Hands-on builds I took from idea to a live deploy. Useful practice
+            for product sense, delivery, and owning the full loop.
           </p>
           <div className="grid gap-5 sm:grid-cols-2">
             {projects.map((project) => (

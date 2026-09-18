@@ -1,6 +1,6 @@
 # Ryan Chiem — Portfolio
 
-Personal recruiting portfolio: shipped side projects and links to LinkedIn + GitHub.
+Personal recruiting portfolio for Ryan Chiem — military background, shipped software side projects, AI literacy, defense tech focus. LinkedIn + GitHub CTAs.
 
 **Live:** [ryan-chiem.vercel.app](https://ryan-chiem.vercel.app)  
 **Repo:** [github.com/MadTekkers/portfolio](https://github.com/MadTekkers/portfolio)

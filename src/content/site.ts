@@ -2,15 +2,17 @@ export const site = {
   name: "Ryan Chiem",
   title: "Ryan Chiem — Portfolio",
   description:
-    "Builder portfolio: shipped side projects including WOD Vault and VetEats, plus links to LinkedIn and GitHub.",
+    "Coming from the military. Building and shipping software side projects with strong AI literacy — focused on defense tech careers.",
   url: "https://ryan-chiem.vercel.app",
   linkedIn: "https://www.linkedin.com/in/ryan-chiem",
   github: "https://github.com/MadTekkers",
-  headline: "Building useful products end to end.",
+  headline:
+    "Military background. Shipping software. Aiming at defense tech.",
   valueProp:
-    "I ship real side projects from idea to deploy — product, UI, and delivery. Looking for roles where product sense and hands-on building matter.",
+    "I'm coming from the military and building real software on the side — from idea to deployed product. I take AI literacy seriously: learning tools carefully and using them to move faster without overclaiming. Looking for defense tech roles where mission, ownership, and practical building matter.",
   about: [
-    "I'm Ryan Chiem — a builder who turns ideas into deployed apps. Recent work includes a functional fitness workout library (WOD Vault) and a Veterans Day deals map (VetEats).",
-    "I care about clear UX, shipping working software, and iterating from real use. Reach out on LinkedIn or browse the repos on GitHub.",
+    "I'm Ryan Chiem. I'm coming from the military and investing heavily in software and AI literacy so I can contribute in defense tech.",
+    "I learn by shipping. Side projects like WOD Vault (a functional fitness workout library) and VetEats (a Veterans Day deals map and route planner) are how I practice product thinking, full-stack delivery, and getting something live.",
+    "For me, AI literacy means knowing when tools help, verifying outputs, and applying them thoughtfully — not calling myself an AI engineer. I'm looking for teams building serious capability for defense and national security.",
   ],
 } as const;
