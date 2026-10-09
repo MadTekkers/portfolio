@@ -25,7 +25,7 @@ export const projects: Project[] = [
     slug: "veteats",
     name: "VetEats",
     summary:
-      "Veterans Day deals map and route planner — find participating restaurants and plan an efficient route.",
+      "A directory of Veterans Day deals: find participating restaurants and plan an efficient route.",
     stack: ["Next.js", "Maps", "TypeScript", "Vercel"],
     liveUrl: "https://veteats.com",
     image: "/projects/veteats.webp",
