@@ -53,13 +53,8 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <Section
           id="projects"
-          eyebrow="Selected work"
-          title="Software I've shipped"
+          title="My Projects"
         >
-          <p className="mb-8 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-            Hands-on builds I took from idea to a live deploy. Useful practice
-            for product sense, delivery, and owning the full loop.
-          </p>
           <div className="grid gap-5 sm:grid-cols-2">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
