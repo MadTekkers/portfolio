@@ -7,9 +7,9 @@ export const site = {
   linkedIn: "https://www.linkedin.com/in/ryan-chiem",
   github: "https://github.com/MadTekkers",
   headline:
-    "Military background. Shipping software. Aiming at defense tech.",
+    "Marine Corps infantry officer. Building useful tech. Aiming at defense tech.",
   valueProp:
-    "I'm coming from the military and building real software on the side — from idea to deployed product. I take AI literacy seriously: learning tools carefully and using them to move faster without overclaiming. Looking for defense tech roles where mission, ownership, and practical building matter.",
+    "I spent 5 years in the Marine Corps infantry using any tools available to improve lethality and performance. Now, I take AI literacy seriously. I'm building software on the side and these are the projects I'm working on.",
   about: [
     "I'm Ryan Chiem. I'm coming from the military and investing heavily in software and AI literacy so I can contribute in defense tech.",
     "I learn by shipping. Side projects like WOD Vault (a functional fitness workout library) and VetEats (a Veterans Day deals map and route planner) are how I practice product thinking, full-stack delivery, and getting something live.",
