@@ -11,6 +11,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "game-lobby",
+    name: "Game Lobby",
+    summary:
+      "Multiplayer daily word games: six puzzles with open lobbies, share links, and live co-op or versus play.",
+    stack: ["React", "TypeScript", "Supabase Realtime", "Postgres", "Vercel"],
+    liveUrl: "https://game-lobby-games.vercel.app",
+    image: "/projects/game-lobby.webp",
+    imageAlt: "Game Lobby landing page",
+    status: "live",
+  },
+  {
     slug: "wod-vault",
     name: "WOD Vault",
     summary:
